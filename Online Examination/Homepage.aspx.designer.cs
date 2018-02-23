@@ -11,7 +11,7 @@ namespace Online_Examination
 {
 
 
-    public partial class Default1
+    public partial class Homepage
     {
     }
 }

@@ -10,7 +10,7 @@
 namespace Online_Examination {
     
     
-    public partial class SiteMaster {
+    public partial class Site2 {
         
         /// <summary>
         /// HeadContent control.
@@ -22,24 +22,6 @@ namespace Online_Examination {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder HeadContent;
         
         /// <summary>
-        /// pre_login control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pre_login;
-        
-        /// <summary>
-        /// registerLink control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor registerLink;
-        
-        /// <summary>
         /// post_login control.
         /// </summary>
         /// <remarks>
@@ -47,6 +29,15 @@ namespace Online_Examination {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel post_login;
+        
+        /// <summary>
+        /// login_name control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label login_name;
         
         /// <summary>
         /// FeaturedContent control.

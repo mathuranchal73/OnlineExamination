@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="showresult.aspx.cs" Inherits="Online_Examination.showresult" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site2.Master" AutoEventWireup="true" CodeBehind="showresult.aspx.cs" Inherits="Online_Examination.showresult" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="FeaturedContent" runat="server">
@@ -61,9 +61,9 @@
     </table>
     <br />
     <a  href="reviewquestions.aspx">Review Questions</a>
-
+    <form runat="server">
     <asp:LinkButton ID="lbRank" runat="server" OnClick="lbRank_Click">Rank The Result</asp:LinkButton><a  href="Home.aspx">Home</a><br />
-    <br />
+    <br /></form>
     <asp:Label ID="lblRank" runat="server"></asp:Label><br />
     
         

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="OnlineExam.Home" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site2.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="OnlineExam.Home" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
@@ -21,13 +21,15 @@
     </section> 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:Button ID="Submit" runat="server" Height="67px" text="Submit" OnClick="Submit_Exam" />    
+    <form runat="server">    <asp:Button ID="Submit" runat="server" Height="67px" text="Submit" OnClick="Submit_Exam" />    
     <td><asp:DropDownList ID="ddlSubjects" runat="server" DataSourceID="MySQLConnection" DataTextField="sname" DataValueField="sname">
             </asp:DropDownList></td><td></td>
                <asp:SqlDataSource  runat="server" ID="MySQLConnection" ProviderName="<%$ ConnectionStrings:MySQLConnection.ProviderName %>" ConnectionString="<%$ ConnectionStrings:MySQLConnection %>"  SelectCommand="SELECT sname FROM dbo.oe_subjects"></asp:SqlDataSource>  <b>Note</b>
     <ul>
     <li>Each exam contains 5 question.</li><li>Use Next and Previous buttons to navigate between questions</li><li>Result is displayed after the last questions is answered</li><li>CANCEL button can be used to cancel the exam</li><li>No time limitation. However the time taken is stored in database</li></ul>
     
-    <br />    
+    <br />   
+        </form>
+ 
 </asp:Content>
     
